@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- fontawesome link -->
+    <!-- FontAwesome-css -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>Burger Club</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a href="#"><img src="images/logo.png" alt="logo"> </a>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onClick="closeMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipe</a></li>
+                </ul>
+                <button type="button" class="btn">Sign Up</button>
+            </div>
+            <i class="fas fa-bars" onClick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>Food <span>Doesn't have<br/> a religion.</span> It is a religion.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id ducimus, <br> ab ipsam facere, ipsa optio magni, maxime laboriosam nobis ut! Excepturi quasi.</p>
+            <button type="button" class="btn">Explore</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>Subscribe Our YouTube channel and never miss any new videos.</small>
+                <p>
+                    <i class="fas fa-angle-double-left"></i>
+                    <a href="">PREV</a>
+                    <a href="">NEXT</a>
+                    <i class="fas fa-angle-double-right"></i>
+                </p>
+            </div>
+            <div class="notification-img">
+                <img src="images/burger.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <script>
+        const show = document.getElementById('nav-links');
+        function showMenu(){
+            show.style.right = '0';
+        }
+        function closeMenu(){
+            show.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
