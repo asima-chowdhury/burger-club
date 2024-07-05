@@ -1,4 +1,4 @@
-# burger-club
+# Burger-club
 A simple responsive header part of a restaurant website.
 
 Technology used:
